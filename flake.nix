@@ -1,7 +1,7 @@
 {
   description = "Basic node.js environment";
 
-  inputs.nixpkgs.url = "nixpkgs";
+  inputs = { nixpkgs.url = "nixpkgs"; };
 
   outputs = { self, nixpkgs, ... }:
     let shell = { system ? "x86_64-linux" }:

@@ -27,5 +27,9 @@ module.exports = {
     new HtmlWebpackPlugin({template: 'src/index.html'}),
     new CopyPlugin({patterns: [{from: 'src/assets', to: 'assets'}]}),
     ],
+
+  devServer: {
+    static: {directory: path.join(__dirname, 'dist')},
+    watchFiles: ['src/*'],
   },
 };

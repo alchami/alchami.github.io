@@ -8,7 +8,7 @@
       # Kinda ugly? Dunno how to do it without let - in
       let pkgs = import nixpkgs { system = system; };
       in pkgs.mkShell {
-        buildInputs = [ pkgs.nodejs ];
+        buildInputs = [ pkgs.nodejs pkgs.nodePackages.webpack-cli ];
         shellHook = ''
           if command -v fish > /dev/null
             then fish && exit

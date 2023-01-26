@@ -1,4 +1,5 @@
 const path = require('path');
+const { VueLoaderPlugin } = require('vue-loader');
 const CopyPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -16,6 +17,10 @@ module.exports = {
   module: {
     rules: [
         {
+        test: /\.vue$/,
+        use: 'vue-loader'
+      },
+      {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
         },
@@ -23,6 +28,7 @@ module.exports = {
         },
 
   plugins: [
+    new VueLoaderPlugin(),
     new MiniCssExtractPlugin({filename: '[name].css'}),
     new HtmlWebpackPlugin({template: 'src/index.html'}),
     new CopyPlugin({patterns: [{from: 'src/assets', to: 'assets'}]}),

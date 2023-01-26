@@ -1,6 +1,7 @@
 const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: './src/main.js',
@@ -13,17 +14,14 @@ module.exports = {
   module: {
     rules: [
         {
-            test: /\.html$/i,
-            type: 'asset/resource',
-            generator: { filename: '[base]'},
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
         },
-        {
-            test: /\.(png|jpg|jpeg|gif)$/i,
-            type: 'asset/resource',
-            generator: { filename: '[base]'}
+    ],
         },
 
   plugins: [
+    new MiniCssExtractPlugin({filename: '[name].css'}),
     new HtmlWebpackPlugin({template: 'src/index.html'}),
     new CopyPlugin({patterns: [{from: 'src/assets', to: 'assets'}]}),
     ],

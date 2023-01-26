@@ -1,4 +1,6 @@
 const path = require('path');
+const CopyPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/main.js',
@@ -20,6 +22,10 @@ module.exports = {
             type: 'asset/resource',
             generator: { filename: '[base]'}
         },
+
+  plugins: [
+    new HtmlWebpackPlugin({template: 'src/index.html'}),
+    new CopyPlugin({patterns: [{from: 'src/assets', to: 'assets'}]}),
     ],
   },
 };

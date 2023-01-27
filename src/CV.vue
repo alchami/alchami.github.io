@@ -1,3 +1,6 @@
+<script setup>
+    import Header from './components/Header.vue'
+</script>
 <template>
-    <h1 class="text-center">Hello!</h1>
+    <Header/>    
 </template>

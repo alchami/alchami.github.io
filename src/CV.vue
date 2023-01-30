@@ -15,7 +15,7 @@ import cv from "./cv.json";
     </section>
 
     <section>
-      <h3>Ce que j’apprend :</h3>
+      <h3>Ce que j’apprends :</h3>
       <CardList :data="cv.learning"/>
     </section>
 

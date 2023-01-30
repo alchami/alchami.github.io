@@ -1,5 +1,6 @@
 ~*
 dist/
+cv.json
 
 # Javascript stuff
 node_modules/

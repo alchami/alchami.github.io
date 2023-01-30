@@ -3,8 +3,8 @@ module.exports = {
   content: ["./src/**/*.{html,js,vue}"],
   theme: {
     fontFamily: {
-      'sans': ['Nunito', 'sans-serif'],
-      'mono': ['"IBM Plex Mono Bold"'],
+      'sans': ['Nunito', 'Arial', 'sans-serif'],
+      'mono': ['"IBM Plex Mono Bold"', '"Courrier New"'],
     },
     extend: {
       colors: {'aliceblue': '#f0f8ff'},

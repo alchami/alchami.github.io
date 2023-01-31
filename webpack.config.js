@@ -35,6 +35,10 @@ module.exports = {
     ],
 
   devServer: {
+    host: '0.0.0.0',
+    port: "6969",
+    compress: true,
+    allowedHosts: ['all'],
     static: {directory: path.join(__dirname, 'dist')},
     watchFiles: ['src/*'],
   },

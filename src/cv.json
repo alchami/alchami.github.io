@@ -1,0 +1,72 @@
+{
+    "jobs": [
+      {
+        "title": "Licence SPI",
+        "text": "- Ingénérie électronique - 2015 à 2016",
+        "description": "Sciences de l’information, programmation embarquée et réalisation de circuits."
+      },
+      {
+        "title": "GEOIDE",
+        "text": "- Developpeuse embarqué - Mai à Juin 2016",
+        "description": "Prototypage d’un boitier radio aux standards militaires, tests unitaires et d’intégration entre deux émetteur."
+      },
+      {
+        "title": "BTS CIM",
+        "text": "- Microtechniques - 2013 à 2015",
+        "description": "Procédés de microtechniques, fabrication de l’ordre du micromètre, assistés par ordinateur ou manuels." 
+      },
+      {
+        "title": "Worldplas",
+        "text": "- Technicienne microtechniques - Juin 2014",
+        "description": "Conception d’une station d’assemblage répondant aux normes de santé physique pour opérateurs"
+      }
+    ],
+    "techs": [
+      { "title": "Javascript", "text": " - ES6" },
+      { "title": "Tailwindcss", "text": " - framework CSS" },
+      { "title": "Nix", "text": " - environnement de developpment reproductible" },
+      { "title": "Clojure", "text": " - Dialecte de Lisp fonctionnel pour front et back-end" }
+    ],
+    "learning": [
+      { "title": "Systèmes de types et Typescript" },
+      { "title": "Design responsif et accessible" },
+      { "title": "Informatique quantique" },
+      { "title": "WebGL" }
+    ],
+    "langs": [
+      { "title": "Français", "text":": langue maternelle" },
+      { "title": "Anglais", "text":": billingue" },
+      { "title": "Japonais", "text":": notions élémentaires"}
+    ],
+    "personal": [
+      {
+        "title": "pouet",
+        "text": "pouet"
+      }
+    ],
+    "socials": [
+      {
+        "title": "",
+        "bulletStyle": "list-style-image: url('assets/phone.png');",
+        "text": "(+33) 06 51 82 83 40"
+      },
+  
+      {
+        "title": "",
+        "bulletStyle": "list-style-image: url('assets/email.png');",
+        "text": "alice · chaminas at riseup · net"
+      },
+  
+      {
+        "title": "",
+        "bulletStyle": "list-style-image: url('assets/github.png');",
+        "text": "github.com/alchami/"
+      },
+  
+      {
+        "title": "",
+        "bulletStyle": "list-style-image: url('assets/linkedin.png');",
+        "text": "linkedin.com/in/alice-cha/"
+      }
+    ]
+  }

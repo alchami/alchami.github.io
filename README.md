@@ -1,2 +1,7 @@
-# alchami.github.io
-my portfolio website
+alchami.github.io
+============================
+
+Welcome! This is my resume/portfolio website.
+
+Build
+----------------------------

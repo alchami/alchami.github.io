@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{html,js,vue}"],
   theme: {
     fontFamily: {
-      'sans': ['"IBM Plex Sans Regular"', 'Nunito', 'Arial', 'sans-serif'],
+      'sans': ['"IBM Plex Sans Light"', 'Nunito', 'Arial', 'sans-serif'],
       'heading': ['"IBM Plex Mono Bold"', '"Courrier New"'],
       'mono': ['"IBM Plex Mono Bold"', '"Courrier New"']
     },
@@ -11,8 +11,8 @@ module.exports = {
       fontSize: {
         'body': '3vw',
         'heading': '3vw',
-        'lg-body': '1.2vw',
-        'lg-heading': '1.5vw'
+        'lg-body': '1.5vw',
+        'lg-heading': '1.8vw'
       },
       colors: {
         'cyan': '#D2F7FF',
